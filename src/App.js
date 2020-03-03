@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import Button from './components/Button.js'
 
 class App extends Component {
   render(){
@@ -7,31 +8,31 @@ class App extends Component {
     <div className="App">
     <div className="calculator_container">
     <div className="row">
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>/</button>
+    <Button>7</Button>
+    <Button>8</Button>
+    <Button>9</Button>
+    <Button>/</Button>
     </div>
 
     <div className="row">
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>*</button>
+    <Button>4</Button>
+    <Button>5</Button>
+    <Button>6</Button>
+    <Button>*</Button>
     </div>
 
     <div className="row">
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>+</button>
+    <Button>1</Button>
+    <Button>2</Button>
+    <Button>3</Button>
+    <Button>+</Button>
     </div>
 
     <div className="row">
-    <button>.</button>
-    <button>0</button>
-    <button>=</button>
-    <button>-</button>
+    <Button>.</Button>
+    <Button>0</Button>
+    <Button>=</Button>
+    <Button>-</Button>
     </div>
   </div>
   </div>
