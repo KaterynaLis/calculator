@@ -1,6 +1,6 @@
 .input {
     display: flex;
-    height: 4em;
+    height: 1em;
     flex: 1;
     background-color: black;
     outline: 1px solid #888888;
@@ -8,6 +8,7 @@
     justify-content: flex-end;
     padding: 0.5em;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 3em;
     align-items: center;
+    font-weight: lighter;
 }
