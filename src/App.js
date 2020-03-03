@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
 import Button from './components/Button.js'
+import Input from './components/Input.js'
+import ClearButton from "./components/ClearButton.js"
 
 class App extends Component {
   render(){
   return (
     <div className="App">
     <div className="calculator_container">
+    <div className='row'>
+    <Input></Input>
+    </div>
     <div className="row">
     <Button>7</Button>
     <Button>8</Button>
@@ -33,6 +38,10 @@ class App extends Component {
     <Button>0</Button>
     <Button>=</Button>
     <Button>-</Button>
+    </div>
+
+    <div className="row">
+    <ClearButton>clear</ClearButton>
     </div>
   </div>
   </div>
