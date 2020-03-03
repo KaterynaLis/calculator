@@ -5,39 +5,49 @@ import Input from './components/Input.js'
 import ClearButton from "./components/ClearButton.js"
 
 class App extends Component {
+  state = {
+    input: "",
+    previousNumber: "",
+    currentNumber: "",
+    operator: ""
+  }
+
+  addInput = val => {
+    this.setState({input: this.state.input + val + " "});
+  }
   render(){
   return (
     <div className="App">
     <div className="calculator_container">
     <div className='row'>
-    <Input></Input>
+    <Input>{this.state.input}</Input>
     </div>
     <div className="row">
-    <Button>7</Button>
-    <Button>8</Button>
-    <Button>9</Button>
-    <Button>/</Button>
-    </div>
-
-    <div className="row">
-    <Button>4</Button>
-    <Button>5</Button>
-    <Button>6</Button>
-    <Button>*</Button>
+    <Button handleClick={this.addInput}>7</Button>
+    <Button handleClick={this.addInput}>8</Button>
+    <Button handleClick={this.addInput}>9</Button>
+    <Button handleClick={this.addInput}>/</Button>
     </div>
 
     <div className="row">
-    <Button>1</Button>
-    <Button>2</Button>
-    <Button>3</Button>
-    <Button>+</Button>
+    <Button handleClick={this.addInput}>4</Button>
+    <Button handleClick={this.addInput}>5</Button>
+    <Button handleClick={this.addInput}>6</Button>
+    <Button handleClick={this.addInput}>*</Button>
     </div>
 
     <div className="row">
-    <Button>.</Button>
-    <Button>0</Button>
-    <Button>=</Button>
-    <Button>-</Button>
+    <Button handleClick={this.addInput}>1</Button>
+    <Button handleClick={this.addInput}>2</Button>
+    <Button handleClick={this.addInput}>3</Button>
+    <Button handleClick={this.addInput}>+</Button>
+    </div>
+
+    <div className="row">
+    <Button handleClick={this.addInput}>.</Button>
+    <Button handleClick={this.addInput}>0</Button>
+    <Button handleClick={this.addInput}>=</Button>
+    <Button handleClick={this.addInput}>-</Button>
     </div>
 
     <div className="row">
